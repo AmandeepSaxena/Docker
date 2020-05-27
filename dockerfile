@@ -1,7 +1,7 @@
-#FROM node:latest as node
-#WORKDIR /app
-#COPY . .
-#run npm install
+FROM node:latest as node
+WORKDIR /app
+COPY . .
+RUN npm install
 
 
 FROM nginx:alpine
