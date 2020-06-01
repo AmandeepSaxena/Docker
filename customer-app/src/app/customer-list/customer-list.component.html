@@ -1,0 +1,23 @@
+<div class="restaurant-list-container">
+ 
+  <mat-toolbar class="title">
+  <img src="assets/ncblogo.jpg" style="width:150px;height:50px"> 
+    <span> &nbsp;&nbsp;&nbsp;&nbsp; NCB Customer Onboarding</span>
+  </mat-toolbar>
+   <br>
+  
+  <button button="submit" mat-raised-button class="add-button" [routerLink]="['/customer-add']">Add New Customer</button>
+  
+  <mat-list role='list'>
+ 
+    <div mat-subheader>Name of Customer</div>
+    <mat-list-item *ngFor="let rest of restaurants">
+      <div mat-line>
+        <a class="link" [routerLink]="['/customer-details', rest.id]"><span fxFlex="80%">{{rest.name}}</span></a>
+        <a class="link update-icon" [routerLink]="['/customer-edit', rest.id]"><mat-icon fxFlex="10%">mode_edit</mat-icon></a>
+        <a class="link update-icon" [routerLink]="['/customer-delete', rest.id]"><mat-icon fxFlex="10%">delete</mat-icon></a>
+      </div>  
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</div>

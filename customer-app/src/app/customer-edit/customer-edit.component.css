@@ -1,0 +1,58 @@
+.giphy {
+    margin: 10px;
+  }
+  
+  .form-container
+  {
+
+	align-self:center;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 100%;
+	width: 100%;
+    align-content: center;
+  }
+  .title {
+   letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color:rgb(10,113,97);
+	color: white;
+	align-self: center;
+	align-content: center;
+  }
+   
+  .form {
+    width: 30%;
+	height: 100%;
+    background-color: rgb(10,113,97);
+    border: 2px solid ;
+    border-radius: 5px;
+    margin: 20px;
+	align-self: center;
+	color: white;
+
+	
+  }
+  .mat-form-field {
+    width: 80%;
+	height: 100%;
+	color: black;
+	
+  }
+  .mat-card-actions{
+	  color: black;
+  }
+  .mat-form-field-flex, .mat-form-field-label-wrapper {
+    font-size: 18px;
+    letter-spacing: 1px;
+	color: black;
+	
+  }
+  .form-footer {
+    letter-spacing: 1px;
+    background-color: grey;
+	color: white;
+  }
+

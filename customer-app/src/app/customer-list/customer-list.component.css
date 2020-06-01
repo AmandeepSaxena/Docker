@@ -1,0 +1,44 @@
+ .mat-list {
+    width: 60%;
+    border: 2px solid ;
+    border-radius: 5px;
+    align-content: center;
+    color: Black;
+    margin: 10px 20px;
+  }
+  .mat-line {
+    font-size: 18px;
+    color: Black;
+  }
+  .mat-subheader {
+    font-size: 18px;
+    color: Black;
+    font-weight: 600;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+ }
+  .add-button {
+    margin: 10px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: rgb(140,198,63) ;
+    color: white
+  }
+  .update-icon {
+    float: right;
+    color:	black;
+    padding: 10px;
+  }
+  .mat-list-item {
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .title {
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color:rgb(10,113,97);
+	color: white;
+  }
