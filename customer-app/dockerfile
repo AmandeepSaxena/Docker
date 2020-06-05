@@ -3,6 +3,7 @@ FROM node:latest as node
 WORKDIR /app
 COPY . .
 RUN npm install
+RUN npm install -g @angular/cli
 RUN npm run build --prod
 
 #stage 2 
@@ -11,4 +12,4 @@ RUN npm run build --prod
 
 FROM tomcat:8.0-alpine
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
-COPY --from=node /app/dist/employee-app /usr/local/tomcat/webapps/
+COPY --from=node /app/dist/employee-app /usr/local/tomcat/webapps/employee-app

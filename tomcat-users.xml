@@ -27,5 +27,5 @@
   and thus are ignored when reading this file. Do not forget to remove
   <!.. ..> that surrounds them.
 -->
-  <user username="admin" password="secret" roles="manager-gui"/>
+  <user username="aman" password="aman" roles="manager-gui"/>
 </tomcat-users>
