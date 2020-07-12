@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class RestaurantService {
 
-  public API = 'http://ncbtomcat.eastus.cloudapp.azure.com:8080/ncbcustomer-app-service/api/v1/customer';
+  public API = 'http://ncbubuntu.eastus.cloudapp.azure.com:8081/api/v1/customer';
   public httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
