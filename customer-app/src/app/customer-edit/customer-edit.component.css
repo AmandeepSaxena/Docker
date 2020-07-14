@@ -17,7 +17,7 @@
    letter-spacing: 1px;
     font-size: 24px;
     font-weight: 600;
-    background-color:rgb(10,113,97);
+    background-color:rgb(105,59,131);
 	color: white;
 	align-self: center;
 	align-content: center;
@@ -26,7 +26,7 @@
   .form {
     width: 30%;
 	height: 100%;
-    background-color: rgb(10,113,97);
+    background-color: rgb(105,59,131);
     border: 2px solid ;
     border-radius: 5px;
     margin: 20px;
@@ -52,7 +52,7 @@
   }
   .form-footer {
     letter-spacing: 1px;
-    background-color: grey;
+    background-color: rgb(157,205,23);
 	color: white;
   }
 

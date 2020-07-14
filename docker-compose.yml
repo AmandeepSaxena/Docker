@@ -1,0 +1,18 @@
+version: '3'
+services:
+        angular:
+          container_name: angularcontainer
+          image: noobsaman/devops:latest
+          ports:
+            - "8080:8080"
+          networks:
+            - net
+        java:
+          container_name: javacontainer
+          image: vashisthadi/javaservicecoe:latest
+          ports:
+            - "8081:8080"
+          networks:
+            - net
+networks:
+  net:

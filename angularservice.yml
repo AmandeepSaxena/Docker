@@ -1,0 +1,40 @@
+# Docker
+# Build a Docker image 
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+pool:
+  name: 'COE_agent_pool'
+  vmImage: 'UbuntuAzure'
+resources:
+- repo: self
+
+variables:
+  tag: '$(Build.BuildId)'
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:  
+  - job: Build
+    displayName: Build
+
+    steps:
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'aman-docker-hub'
+        repository: 'noobaman/devops'
+        command: 'buildAndPush'
+        Dockerfile: '$(Build.SourcesDirectory)/customer-app/Dockerfile'
+        tags: 'latest'
+    # - task: Bash@3
+    #   inputs:
+    #     targetType: 'inline'
+    #     script: |
+    #       docker-compose down
+    #       docker-compose build
+    #       docker-compose up -d
+    #     workingDirectory: '$(Build.SourcesDirectory)'
+
+
